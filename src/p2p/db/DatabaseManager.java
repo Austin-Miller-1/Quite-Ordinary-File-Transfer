@@ -53,7 +53,7 @@ public class DatabaseManager {
   //Registers JDBC driver
   private static void registerDriver(){
      try{
-      Class.forName(JDBC_DRIVER).newInstance();
+      Class.forName(JDBC_DRIVER).getConstructor().newInstance();
     }catch(Exception e){
       System.out.println("Could not use JDBC driver");
       e.printStackTrace();
