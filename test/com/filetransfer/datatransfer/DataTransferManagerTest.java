@@ -10,7 +10,7 @@ class DataTransferManagerTest {
 
 
     @BeforeEach
-    public void setupForEachTest(){
+    public void setupBeforeEachTest(){
         manager = DataTransferManager.getInstance();
     }
 
