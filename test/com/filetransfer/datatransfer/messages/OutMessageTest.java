@@ -128,7 +128,7 @@ class OutMessageTest {
     @Test
     public void testHasMoreBytes_doesNotHaveMore(){
         //Test Fixture
-        BadMessage emptyMessage = new BadMessage();
+        OutMessage emptyMessage = new OutMessage("");
 
         //Condition
         assertFalse(emptyMessage.hasMoreBytes(), "hasMoreBytes must indicate that there is no more message to" +

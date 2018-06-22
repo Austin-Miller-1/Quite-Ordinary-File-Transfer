@@ -27,7 +27,6 @@ public class InMessage implements Message {
     /**
      * Appends the given String to the end of the current Message.
      * @param strToAppend String appended to end of Message. If null, Message is unchanged.
-     * @throws MessageWriteWhileReadingException if a string is provided to append to message while message is currently being read
      */
     public void append(String strToAppend){
         if(strToAppend != null)
